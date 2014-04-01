@@ -106,11 +106,13 @@ position: absolute;
     border-style: dotted;
     border-color: white;
     border-radius: 50%;
+    
+    
       -webkit-animation: spin-right 15s linear infinite;
-     -moz-animation: spin-right 10s linear infinite;
-      -ms-animation: spin-right 10s linear infinite;
-       -o-animation: spin-right 10s linear infinite;
-          animation: spin-right 10s linear infinite;
+     -moz-animation: spin-right 15s linear infinite;
+      -ms-animation: spin-right 15s linear infinite;
+       -o-animation: spin-right 15s linear infinite;
+          animation: spin-right 15s linear infinite;
 }
 @-webkit-keyframes spin-right {
   100% {
@@ -121,4 +123,14 @@ position: absolute;
             transform: rotate(360deg);
   }
 }
-  
+
+@keyframes spin-right {
+  100% {
+    -webkit-transform: rotate(360deg);
+       -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+         -o-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+   
